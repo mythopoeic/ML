@@ -5,12 +5,13 @@
 % 
 %  This file contains code that helps you get started on the logistic
 %  regression exercise. You will need to complete the following functions 
-%  in this exericse:
+%  in this exercise:
 %
 %     sigmoid.m
 %     costFunction.m
 %     predict.m
 %     costFunctionReg.m
+%     plotData.m % also needs to be edited
 %
 %  For this exercise, you will not need to change any code in this file,
 %  or any other files other than those mentioned above.
@@ -42,7 +43,7 @@ xlabel('Exam 1 score')
 ylabel('Exam 2 score')
 
 % Specified in plot order
-legend('Admitted', 'Not admitted')
+legend('Admitted','Not admitted')
 hold off;
 
 fprintf('\nProgram paused. Press enter to continue.\n');
@@ -51,7 +52,7 @@ pause;
 
 %% ============ Part 2: Compute Cost and Gradient ============
 %  In this part of the exercise, you will implement the cost and gradient
-%  for logistic regression. You neeed to complete the code in 
+%  for logistic regression. You need to complete the code in 
 %  costFunction.m
 
 %  Setup the data matrix appropriately, and add ones for the intercept term
